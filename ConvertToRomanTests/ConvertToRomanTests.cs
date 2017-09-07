@@ -114,5 +114,23 @@ namespace ConvertToRoman.Tests
         {
             Assert.AreEqual("LXXXVIII", test.ToRomanNumber(88));
         }
+
+        [TestMethod()]
+        public void ToRoman_125()
+        {
+            Assert.AreEqual("CXXV", test.ToRomanNumber(125));
+        }
+
+        [TestMethod()]
+        public void ToRoman_255()
+        {
+            Assert.AreEqual("CCLV", test.ToRomanNumber(255));
+        }
+
+        [TestMethod()]
+        public void ToRoman_301()
+        {
+            Assert.AreEqual("CCCI", test.ToRomanNumber(301));
+        }
     }
 }

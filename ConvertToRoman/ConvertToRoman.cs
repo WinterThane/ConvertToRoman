@@ -19,7 +19,17 @@ namespace ConvertToRoman
             //Roman numerals consist of the letters I (1), V (5), X (10), L (50), C (100), D (500), M (1000)
             while (remainder > 0)
             {
-                if (remainder >= 50)
+                if (remainder >= 100)
+                {
+                    result.Append("C");
+                    remainder -= 100;
+                }
+                else if (remainder >= 90)
+                {
+                    result.Append("XC");
+                    remainder -= 90;
+                }
+                else if (remainder >= 50)
                 {
                     result.Append("L");
                     remainder -= 50;
