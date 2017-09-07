@@ -132,5 +132,48 @@ namespace ConvertToRoman.Tests
         {
             Assert.AreEqual("CCCI", test.ToRomanNumber(301));
         }
+
+        [TestMethod()]
+        public void ToRoman_400()
+        {
+            Assert.AreEqual("CD", test.ToRomanNumber(400));
+        }
+
+        [TestMethod()]
+        public void ToRoman_500()
+        {
+            Assert.AreEqual("D", test.ToRomanNumber(500));
+        }
+
+        [TestMethod()]
+        public void ToRoman_780()
+        {
+            Assert.AreEqual("DCCLXXX", test.ToRomanNumber(780));
+        }
+
+        [TestMethod()]
+        public void ToRoman_1015()
+        {
+            Assert.AreEqual("MXV", test.ToRomanNumber(1015));
+        }
+
+        [TestMethod()]
+        public void ToRoman_1507()
+        {
+            Assert.AreEqual("MDVII", test.ToRomanNumber(1507));
+        }
+
+        [TestMethod()]
+        public void ToRoman_2500()
+        {
+            Assert.AreEqual("MMD", test.ToRomanNumber(2500));
+        }
+
+        [TestMethod()]
+        public void ToRoman_3999()
+        {
+            Assert.AreEqual("MMMCMXCIX", test.ToRomanNumber(3999));
+        }
+
     }
 }
