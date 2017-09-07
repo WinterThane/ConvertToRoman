@@ -90,5 +90,29 @@ namespace ConvertToRoman.Tests
         {
             Assert.AreEqual("XXXIX", test.ToRomanNumber(39));
         }
+
+        [TestMethod()]
+        public void ToRoman_40()
+        {
+            Assert.AreEqual("XL", test.ToRomanNumber(40));
+        }
+
+        [TestMethod()]
+        public void ToRoman_49()
+        {
+            Assert.AreEqual("XLIX", test.ToRomanNumber(49));
+        }
+
+        [TestMethod()]
+        public void ToRoman_50()
+        {
+            Assert.AreEqual("L", test.ToRomanNumber(50));
+        }
+
+        [TestMethod()]
+        public void ToRoman_88()
+        {
+            Assert.AreEqual("LXXXVIII", test.ToRomanNumber(88));
+        }
     }
 }
